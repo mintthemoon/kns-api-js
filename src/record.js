@@ -29,7 +29,11 @@ const metadata = (name, url, expiration) => {
         name: name,
         description: `This token represents ownership of the KNS Domain ${name}. Valid until ${dateFromEpoch(expiration)}.`,
         image: url.replace("metadata", "image"),
-        expiration: expiration,
+        attributes: {
+            display_type: "number",
+            trait_type: "Expiration",
+            value: Number(expiration),
+        }
     }
 }
 

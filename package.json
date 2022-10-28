@@ -1,0 +1,26 @@
+{
+  "name": "kns-api",
+  "version": "0.1.0",
+  "description": "Kujira Name System API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mintthemoon/kns-api-js.git"
+  },
+  "author": "mintthemoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mintthemoon/kns-api-js/issues"
+  },
+  "homepage": "https://github.com/mintthemoon/kns-api-js#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "kujira.js": "file:vendor/kujira.js",
+    "lru-cache": "^7.14.0",
+    "sqlite3": "^5.1.2"
+  }
+}
